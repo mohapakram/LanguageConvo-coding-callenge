@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { GlobalContextProvider } from './Contexts/GlobalContextProvider'
+import { FavPokemonsContextProvider } from './Contexts/FavPokemonsContext'
 import Routes from './Routes';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalContextProvider>
+    <FavPokemonsContextProvider>
       <Routes />
-    </GlobalContextProvider>
+    </FavPokemonsContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
